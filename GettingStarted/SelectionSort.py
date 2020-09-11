@@ -3,8 +3,8 @@ def selection_sort(A):
         minimum = i
         for j in range(i + 1, len(A)):
             if A[j] < A[minimum]:
-                minimium = j
-        A[i], A[minimium] = A[minimium], A[i]
+                minimum = j
+        A[i], A[minimum] = A[minimum], A[i]
 
 
 A = [3, 7, 1, 2, 4, 5]
