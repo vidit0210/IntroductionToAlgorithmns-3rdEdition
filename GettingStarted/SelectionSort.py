@@ -1,9 +1,8 @@
 def selection_sort(A):
-    minimium = 0
     for i in range(len(A)):
         minimum = i
         for j in range(i + 1, len(A)):
-            if A[j] < A[minimium]:
+            if A[j] < A[minimum]:
                 minimium = j
         A[i], A[minimium] = A[minimium], A[i]
 
