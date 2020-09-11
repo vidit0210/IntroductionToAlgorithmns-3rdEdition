@@ -1,11 +1,11 @@
 def selection_sort(A):
-    minimium = None
+    minimium = 0
     for i in range(len(A)):
-        minimum = A[i]
+        minimum = i
         for j in range(i + 1, len(A)):
-            if A[j] < minimum:
+            if A[j] < A[minimium]:
                 minimium = j
-    A[i], A[minimium] = A[minimium], A[i]
+        A[i], A[minimium] = A[minimium], A[i]
 
 
 A = [3, 7, 1, 2, 4, 5]
